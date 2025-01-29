@@ -1,42 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>iChatApp-socketio</title>
-   <script src="http://localhost:8000/socket.io/socket.io.js"></script> 
-    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script> -->
-   <!-- <script src="/socket.io/socket.io.js"></script>   -->
-<!--       
-   <script src="client.js"></script>
-   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-   <div id="maindiv">
-      <div class="nav">
-         <img src="https://www.shutterstock.com/image-vector/support-icon-can-be-used-600nw-1887496465.jpg"
-            alt="chat app">
-      </div>
-
-      <div class="container">
-         <div class="message left">I am rani</div>
-         <div class="message right">I am issu</div>
-      </div>
-
-      <div class="send">
-         <form action="#" id="send-container">
-            <input type="text" name="messageInp" placeholder="Text/Message" id="messageInp">
-            <button class="btn" type="submit">Send</button>
-         </form>
-      </div>
-   
-   </div>
-</body>
-
-</html>  -->
-
 <!-- ============================================= -->
 
 <!DOCTYPE html>
@@ -49,6 +10,20 @@
    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
    <script src="client.js"></script>
    <link rel="stylesheet" href="style.css">
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         const images = [
+            "https://t4.ftcdn.net/jpg/05/94/56/97/360_F_594569733_f9Io31TdGs53PRNBOZnMTMiXZI6jP4GX.jpg",
+            "https://e1.pxfuel.com/desktop-wallpaper/381/494/desktop-wallpaper-geometric-80s-phone-thumbnail.jpg",
+            "https://c1.wallpaperflare.com/preview/691/40/896/whatsapp-texting-chat-communication.jpg",
+            "https://plus.unsplash.com/premium_photo-1720556221767-990b2e11807c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1720503242835-b537741c9736?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "https://plus.unsplash.com/premium_photo-1721080251097-b9accb630494?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         ];
+         const randomImage = images[Math.floor(Math.random() * images.length)];
+         document.body.style.backgroundImage = `url('${randomImage}')`;
+      });
+   </script>
 </head>
 
 <body>
@@ -68,4 +43,5 @@
    </div>
 
 </body>
+
 </html>
