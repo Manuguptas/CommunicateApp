@@ -1,0 +1,225 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    
+ 
+}
+body{
+    height: 90px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 10%;
+    padding-top: 20px; 
+} */
+/* 
+img {
+    max-width: 10%;
+    height: auto;
+}
+.container{
+    max-width: 800px;
+    height: 200px;
+    background-color: rgb(32, 223, 159);
+    margin: auto;
+}
+.message{
+    background-color: grey;
+    color: white;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.left{
+float: left;
+clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.send {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .send form {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .send input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+ }
+
+ .send button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+
+ .send button:hover {
+    background-color: #0056b3;
+ } */
+/* #send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+} */
+
+/* Resetting default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    gap: 10px;
+}
+
+.nav img {
+    max-width: 8%;
+    height: auto;
+}
+
+.nav h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Chat container */
+.container {
+    max-width: 800px;
+    height: 300px;
+    background-color: #20df9f;
+    margin: 20px auto;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat message styles */
+.message {
+    background-color: #007bff;
+    color: white;
+    max-width: 60%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.message.left {
+    float: left;
+    clear: both;
+    background-color: #555;
+}
+
+.message.right {
+    float: right;
+    clear: both;
+    background-color: #007bff;
+}
+
+.message:hover {
+    transform: translateY(-5px);
+}
+
+/* Send message section */
+.send {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.send form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.send input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.send input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.send button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send button:hover {
+    background-color: #0056b3;
+}
+
+.send button i {
+    font-size: 18px;
+}
+
+/* Center form */
+#send-container {
+    margin: auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .container {
+        height: 200px;
+    }
+
+    .message {
+        max-width: 80%;
+    }
+}
